@@ -1,16 +1,14 @@
 package com.example.Clinica.client;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Table(name = "clients")
 @Entity(name = "clients")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
@@ -19,6 +17,7 @@ public class Client {
 
     private Long id;
     private String name;
+    @Column(unique=true)
     private String cpf;
     private LocalDate birthDate;
     private Double weight;
