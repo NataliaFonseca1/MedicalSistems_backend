@@ -23,8 +23,11 @@ obs: substituir "seu-projeto-0.0.1-SNAPSHOT.jar" pelo nome real do arquivo JAR g
 ## Linguagens, Frameworks e bibliotecas:
 
 Java
+
 Spring Boot
+
 Spring JPA
+
 Bouncycastle
 
 ## Banco de Dados 
