@@ -1,4 +1,4 @@
-package com.example.Clinica.Security;
+/*package com.example.Clinica.Security;
 
 
 import com.example.Clinica.User.Doctor;
@@ -67,3 +67,4 @@ public class SecurityConfig  {
     }
 
 }
+*/

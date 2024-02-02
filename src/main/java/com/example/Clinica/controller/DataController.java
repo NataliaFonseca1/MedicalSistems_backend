@@ -18,7 +18,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/clients")
-@CrossOrigin(origins = "http://localhost:8080/clients")
+@CrossOrigin(origins="*", allowedHeaders = "*")
 public class DataController {
     @Autowired
     private ClientRepository repository;
@@ -43,6 +43,8 @@ public class DataController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erro ao cadastrar cliente");
         }
     }
+
+    @RequestMapping
     @GetMapping
     public List<ClientResponseDTO> getAll(){
 

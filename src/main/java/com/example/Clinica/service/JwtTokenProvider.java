@@ -1,4 +1,4 @@
-package com.example.Clinica.service;
+/*package com.example.Clinica.service;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -26,3 +26,4 @@ import java.util.Map;
                     .compact();
         }
     }
+*/
