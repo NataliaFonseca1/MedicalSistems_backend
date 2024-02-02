@@ -15,6 +15,8 @@ cd seu-projeto
 
 mvn clean install 
 java -jar target/nome-do-arquivo-jar.jar
+
+
 obs: substituir "seu-projeto-0.0.1-SNAPSHOT.jar" pelo nome real do arquivo JAR gerado durante a construção do projeto.
 
 
