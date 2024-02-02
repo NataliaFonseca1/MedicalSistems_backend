@@ -24,3 +24,29 @@ Java
 Spring Boot
 Spring JPA
 Bouncycastle
+
+## Banco de Dados 
+
+PostgreSQL
+
+##Configuração Banco de Dados: 
+
+No arquivo application.properties (ou application.yml), configure o banco de dados:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/clinica
+spring.datasource.username=admin
+spring.datasource.password=admin
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+## Comandos SQL para a criação do Banco de Dados:
+
+CREATE DATABASE clinica; 
+CREATE USER admin 
+WITH PASSWORD 'admin';
+
+## pgAdmin
+
+Instalação do pgAdmin para manipularção do PostgreSQL localmente:
+pgAdmin Download.
