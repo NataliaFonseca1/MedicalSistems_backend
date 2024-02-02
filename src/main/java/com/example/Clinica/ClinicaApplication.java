@@ -4,12 +4,13 @@ import com.example.Clinica.User.Doctor;
 import com.example.Clinica.User.DoctorRepository;
 import com.example.Clinica.User.Nurse;
 import com.example.Clinica.User.NurseRepository;
+import lombok.Setter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
+@Setter
 @SpringBootApplication
 public class ClinicaApplication {
 
@@ -25,13 +26,16 @@ return(args) ->{
 		doctor.setName("Jose");
 		doctor.setCpf("00000000000");
 		doctor.setPassword(encoder.encode("12345"));
+		doctor.setRole("ROLE_MEDICO");
 		doctorRepository.save(doctor);
 
 		Nurse nurse = new Nurse();
 		nurse.setName("Paulo");
 		nurse.setCpf("11111111111");
 		nurse.setPassword(encoder.encode("12345"));
+		nurse.setRole("ROLE_ENFERMEIRO");
 		nurseRepository.save(nurse);
+
 	};
 	}
 

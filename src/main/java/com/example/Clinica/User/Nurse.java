@@ -17,5 +17,5 @@ public class Nurse {
     private String name;
     private String cpf;
     private String password;
-
+    private String role;
 }
