@@ -7,11 +7,10 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 ## Clonando o Repositório
 
-```bash
 https://github.com/NataliaFonseca1/MedicalSistems_backend.git
 cd seu-projeto
 
-Construir e Executar o projeto: 
+## Construir e Executar o projeto: 
 
 
 mvn clean install 
